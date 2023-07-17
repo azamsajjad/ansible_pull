@@ -4,6 +4,7 @@
   connection: local
   become: true
   tasks:
-    - include: tasks/packages.yml
+    - import_tasks: tasks/packages.yml
+    - import_tasks: cronjob.yml
 
 

@@ -1,0 +1,6 @@
+- name: Install a cronjob for servers to pull from git every 10 minutes
+  cron:
+    user: rupert
+    name: "ansible provision"
+    minute: "*/10"
+    job: "/usr/bin/ansible-pull -o -C main -U https://github.com/syedsajjad-rh/ansible_pull.git localhost.git
