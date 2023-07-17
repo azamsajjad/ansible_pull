@@ -1,0 +1,9 @@
+---
+- name: remote server must pull this default yml from github and run on itself
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+    - include: tasks/packages.yml
+
+

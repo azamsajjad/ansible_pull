@@ -1,0 +1,8 @@
+---
+- name: install packages
+  yum:
+    state: present
+    name:
+      - mc
+      - tmux
+
