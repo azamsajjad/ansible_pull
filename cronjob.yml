@@ -3,4 +3,4 @@
     user: rupert
     name: "ansible provision"
     minute: "*/10"
-    job: "/user/local/bin/ansible-pull -o -C main -U https://github.com/syedsajjad-rh/ansible_pull.git localhost.git > /dev/null"
+    job: "/usr/local/bin/ansible-pull -U git@github.com:syedsajjad-rh/ansible_pull.git --key-file /home/rupert/.ssh/id_rsa --accept-host-key -C main localhost.yml > ~/ansible-pull.log"
