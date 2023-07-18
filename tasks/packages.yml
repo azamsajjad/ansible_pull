@@ -3,7 +3,5 @@
   yum:
     state: present
     name:
-      - mc
-      - tmux
-      - neofetch
+      - zsh
 
